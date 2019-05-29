@@ -1,0 +1,22 @@
+{
+  "name": "stroka",
+  "version": "1.0.0",
+  "description": "String clearing",
+  "main": "index.js",
+  "keywords": [
+    "string",
+    "clear",
+    "clean"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/botaniQQQ/stroka.git"
+  },
+  "bugs": {
+    "url": "https://github.com/botaniQQQ/stroka/issues"
+  },
+  "dependencies": {
+    "html-entities": "1.2.1"
+  }
+}
