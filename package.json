@@ -1,12 +1,13 @@
 {
   "name": "stroka",
-  "version": "1.0.1",
-  "description": "String clearing",
+  "version": "2.0.0",
+  "description": "String clearing, mapper HTML-tags and BB-codes",
   "main": "index.js",
   "keywords": [
     "string",
     "clear",
-    "clean"
+    "clean",
+    "map"
   ],
   "license": "MIT",
   "repository": {
