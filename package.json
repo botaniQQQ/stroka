@@ -1,6 +1,6 @@
 {
   "name": "stroka",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "String clearing, mapper HTML-tags and BB-codes",
   "main": "index.js",
   "keywords": [
