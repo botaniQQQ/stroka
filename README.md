@@ -36,7 +36,7 @@ console.log(stroka(text, {
 
 console.log(stroka(text, {
     create_map_tags: true,
-    min_chars_between_tags: 4 // Default: 30
+    min_chars_between_tags: 4 // Default: 20
 }));
 //=> {
 //=>   text: '_0_ Chip _4_ Dale _3_',
