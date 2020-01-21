@@ -29,7 +29,7 @@ module.exports = function (text, options) {
         clear_bb_codes: true,
         create_map_tags: false,
         merging_tags: true,
-        min_chars_between_tags: 30,
+        min_chars_between_tags: 20,
         symbol_side_left: '_',
         symbol_side_right: '_'
     }, typeof options === 'object' ? options : {});
