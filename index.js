@@ -55,7 +55,10 @@ module.exports = function (text, options) {
             var all = tags.length - 1;
             tags.slice().reverse().forEach(function (tag, i) {
                 var rgx = new RegExp((l ? l + '\\s?' : '') + (all - i) + (r ? '\\s?' + r : ''), 'ig');
-                result = result.replace(rgx, tag);
+                result = result
+                    .replace(rgx, tag)
+                    .replace(/\s+(['"«])\s+([\[<])/ig, ' $1$2')
+                    .replace(/([\]>])\s+([.,?!'"»])\s+/ig, '$1$2 ');
             });
         } else {
             var rgx1 = /(<[^<\r\n]*?>|\[[^\[\r\n]*?])/g;
