@@ -8,7 +8,7 @@ module.exports = function (text, options) {
         if (
             typeof text.text === 'string' &&
             typeof text.tags === 'object' &&
-            text.text && text.tags.length
+            text.text && text.tags && text.tags.length
         ) {
             options = typeof text.options === 'object'
                 ? text.options
