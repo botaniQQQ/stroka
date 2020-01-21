@@ -58,7 +58,9 @@ module.exports = function (text, options) {
                 result = result
                     .replace(rgx, tag)
                     .replace(/\s+(['"«])\s+([\[<])/ig, ' $1$2')
-                    .replace(/([\]>])\s+([.,?!'"»])\s+/ig, '$1$2 ');
+                    .replace(/([\]>])\s+([.,?!'"»])\s+/ig, '$1$2 ')
+                    .replace(/>\s+([^<]*)\s+<\//ig, '>$1</')
+                    .replace(/]\s+([^\[]*)\s+\[\//ig, ']$1[/');
             });
         } else {
             var rgx1 = /(<[^<\r\n]*?>|\[[^\[\r\n]*?])/g;
